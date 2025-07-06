@@ -1,5 +1,4 @@
-
-import { Code, Users, Lightbulb, Rocket, Award, Certificate, Network, GraduationCap } from "lucide-react";
+import { Code, Users, Lightbulb, Rocket, Award, FileText, Network, GraduationCap } from "lucide-react";
 
 const About = () => {
   const features = [
@@ -32,7 +31,7 @@ const About = () => {
       description: "Get recognized by industry experts"
     },
     {
-      icon: <Certificate className="w-12 h-12 text-pink-400" />,
+      icon: <FileText className="w-12 h-12 text-pink-400" />,
       title: "CERTIFICATES",
       description: "Earn certificates of participation"
     },
