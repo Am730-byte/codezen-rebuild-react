@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import About from "@/components/About";
+import Timeline from "@/components/Timeline";
 import Sponsors from "@/components/Sponsors";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
         <Hero />
         <Stats />
         <About />
+        <Timeline />
         <Sponsors />
       </div>
     </div>
