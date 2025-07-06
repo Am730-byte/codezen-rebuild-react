@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
+import Sponsors from "@/components/Sponsors";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
         <Navigation />
         <Hero />
         <Stats />
+        <Sponsors />
       </div>
     </div>
   );
