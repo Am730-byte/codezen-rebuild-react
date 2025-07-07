@@ -14,31 +14,25 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const [theme, setTheme] = useState<Theme>('dark');
 
   useEffect(() => {
-    // Apply Squid Game themed colors
+    // Apply theme to document with enhanced color shifts
     const root = document.documentElement;
     
     if (theme === 'dark') {
       root.classList.add('dark');
-      // Dark theme with Squid Game colors - deep blacks with pink/red accents
-      root.style.setProperty('--bg-primary', '0 0% 2%');
-      root.style.setProperty('--bg-secondary', '0 0% 5%');
+      root.style.setProperty('--bg-primary', '0 0% 4%');
+      root.style.setProperty('--bg-secondary', '240 5% 8%');
       root.style.setProperty('--text-primary', '0 0% 98%');
-      root.style.setProperty('--accent-color', '340 100% 65%'); // Hot pink
-      root.style.setProperty('--gradient-from', '340 100% 15%');
-      root.style.setProperty('--gradient-to', '0 100% 10%');
-      root.style.setProperty('--squid-green', '120 100% 40%');
-      root.style.setProperty('--squid-red', '0 100% 60%');
+      root.style.setProperty('--accent-color', '330 81% 60%');
+      root.style.setProperty('--gradient-from', '300 100% 20%');
+      root.style.setProperty('--gradient-to', '270 100% 15%');
     } else {
       root.classList.remove('dark');
-      // Light theme with Squid Game pastels
-      root.style.setProperty('--bg-primary', '340 50% 98%');
-      root.style.setProperty('--bg-secondary', '340 30% 95%');
-      root.style.setProperty('--text-primary', '0 0% 10%');
-      root.style.setProperty('--accent-color', '340 80% 50%');
-      root.style.setProperty('--gradient-from', '340 60% 90%');
-      root.style.setProperty('--gradient-to', '0 60% 95%');
-      root.style.setProperty('--squid-green', '120 80% 45%');
-      root.style.setProperty('--squid-red', '0 80% 55%');
+      root.style.setProperty('--bg-primary', '0 0% 98%');
+      root.style.setProperty('--bg-secondary', '240 5% 96%');
+      root.style.setProperty('--text-primary', '240 10% 4%');
+      root.style.setProperty('--accent-color', '330 81% 50%');
+      root.style.setProperty('--gradient-from', '300 70% 85%');
+      root.style.setProperty('--gradient-to', '270 70% 90%');
     }
   }, [theme]);
 
