@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,13 +33,16 @@ const Navigation = () => {
           ))}
         </div>
 
-        {/* Go to projects button */}
-        <Button 
-          variant="outline" 
-          className="bg-white text-black border-white hover:bg-gray-100 font-medium px-6"
-        >
-          📁 Go to projects
-        </Button>
+        {/* Right side buttons */}
+        <div className="flex items-center space-x-4">
+          <ThemeToggle />
+          <Button 
+            variant="outline" 
+            className="bg-white text-black border-white hover:bg-gray-100 font-medium px-6"
+          >
+            📁 Go to projects
+          </Button>
+        </div>
 
         {/* Mobile menu button */}
         <button
