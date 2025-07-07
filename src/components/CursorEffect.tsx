@@ -40,7 +40,7 @@ const CursorEffect = () => {
       </div>
 
       {/* Secondary cursor effect */}
-      <div
+      {/*<div
         className={`fixed pointer-events-none z-40 transition-all duration-500 ease-out ${
           isVisible ? 'opacity-60' : 'opacity-0'
         }`}
@@ -50,7 +50,7 @@ const CursorEffect = () => {
         }}
       >
         <div className="w-10 h-10 border border-pink-500/20 rounded-full"></div>
-      </div>
+      </div>*/}
     </>
   );
 };
