@@ -36,7 +36,15 @@ const CursorEffect = () => {
           top: mousePosition.y - 12,
         }}
       >
-        <div className="w-6 h-6 bg-pink-500/30 rounded-full blur-sm"></div>
+            {/*
+            <img
+             src="public/Adobe Express - file.png" // Place your image in the public folder
+                   alt="Custom Cursor"
+                   className="w-6 h-6"
+                   draggable={false}
+            />
+            */ }
+         <div className="w-6 h-6 bg-pink-500/30 rounded-full blur-sm"></div> 
       </div>
 
       {/* Secondary cursor effect */}

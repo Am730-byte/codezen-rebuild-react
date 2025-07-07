@@ -51,7 +51,7 @@ const Footer = () => {
             <div className="space-y-4 mb-8">
               <div className="text-gray-400 flex items-center space-x-3">
                 <span className="text-pink-400">📧</span>
-                <span className="text-sm sm:text-base">business.codegeeks@gmail.com</span>
+                <span className="text-sm sm:text-base">yourmail@gmail.com</span>
               </div>
               <div className="text-gray-400 flex items-center space-x-3">
                 <span className="text-pink-400">📞</span>
@@ -90,7 +90,7 @@ const Footer = () => {
             © 2025 <span className="text-pink-400 font-semibold">CODEZEN</span>. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm text-center md:text-right">
-            Made with <span className="text-red-500 animate-pulse">❤️</span> by Arpit Rajput & Sudhanshu Khosla
+            Made with <span className="text-red-500 animate-pulse">❤️</span> by AM730
           </p>
         </div>
       </div>

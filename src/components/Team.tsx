@@ -108,10 +108,10 @@ const Team = () => {
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-10 transition-transform duration-300"
                     />
                   </div>
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-500/0 to-purple-500/0 group-hover:from-pink-500/20 group-hover:to-purple-500/20 transition-all duration-300"></div>
+                  
                 </div>
                 
                 <h3 className="text-white font-bold text-lg mb-2 group-hover:text-pink-400 transition-colors">
