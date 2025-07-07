@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,20 +40,21 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom theme variables */
+    --bg-primary: 0 0% 98%;
+    --bg-secondary: 240 5% 96%;
+    --text-primary: 240 10% 4%;
+    --accent-color: 330 81% 50%;
+    --gradient-from: 300 70% 85%;
+    --gradient-to: 270 70% 90%;
   }
 
   .dark {
@@ -91,6 +93,14 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom dark theme variables */
+    --bg-primary: 0 0% 4%;
+    --bg-secondary: 240 5% 8%;
+    --text-primary: 0 0% 98%;
+    --accent-color: 330 81% 60%;
+    --gradient-from: 300 100% 20%;
+    --gradient-to: 270 100% 15%;
   }
 }
 
@@ -101,5 +111,48 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    cursor: none;
   }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--bg-secondary));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--accent-color));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--accent-color) / 0.8);
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--accent-color) / 0.3); }
+  50% { box-shadow: 0 0 40px hsl(var(--accent-color) / 0.6); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
