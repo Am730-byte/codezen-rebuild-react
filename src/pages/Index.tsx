@@ -5,6 +5,8 @@ import Stats from "@/components/Stats";
 import About from "@/components/About";
 import Timeline from "@/components/Timeline";
 import Sponsors from "@/components/Sponsors";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -19,6 +21,8 @@ const Index = () => {
         <About />
         <Timeline />
         <Sponsors />
+        <FAQ />
+        <Footer />
       </div>
     </div>
   );
