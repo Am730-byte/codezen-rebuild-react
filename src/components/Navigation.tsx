@@ -18,7 +18,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="relative z-50 w-full py-4 px-6">
+    <nav className="sticky top-0 z-50 w-full py-4 px-6 bg-black/80 backdrop-blur-md border-b border-pink-500/10">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
