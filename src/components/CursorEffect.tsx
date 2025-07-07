@@ -26,7 +26,7 @@ const CursorEffect = () => {
 
   return (
     <>
-      {/* Main cursor effect */}
+      {/* Main cursor effect - Squid Game pink */}
       <div
         className={`fixed pointer-events-none z-50 transition-opacity duration-300 ${
           isVisible ? 'opacity-100' : 'opacity-0'
@@ -36,10 +36,11 @@ const CursorEffect = () => {
           top: mousePosition.y - 12,
         }}
       >
-        <div className="w-6 h-6 bg-pink-500/30 rounded-full blur-sm"></div>
+        <div className="w-6 h-6 rounded-full blur-sm" 
+             style={{ backgroundColor: 'hsl(var(--accent-color) / 0.4)' }}></div>
       </div>
 
-      {/* Secondary cursor effect */}
+      {/* Secondary cursor effect - geometric shape */}
       <div
         className={`fixed pointer-events-none z-40 transition-all duration-500 ease-out ${
           isVisible ? 'opacity-60' : 'opacity-0'
@@ -49,7 +50,8 @@ const CursorEffect = () => {
           top: mousePosition.y - 20,
         }}
       >
-        <div className="w-10 h-10 border border-pink-500/20 rounded-full"></div>
+        <div className="w-10 h-10 border-2 rounded-full rotate-45" 
+             style={{ borderColor: 'hsl(var(--accent-color) / 0.3)' }}></div>
       </div>
     </>
   );
