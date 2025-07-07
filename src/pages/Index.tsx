@@ -35,7 +35,7 @@ const Index = () => {
           <div className="absolute bottom-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-purple-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
 
-        <Navigation />
+        {/* <Navigation /> */}
         <Hero />
         <Stats />
         <About />

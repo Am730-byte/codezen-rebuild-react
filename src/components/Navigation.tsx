@@ -17,8 +17,8 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-40 w-full py-3 sm:py-4 px-4 sm:px-6 bg-black/80 backdrop-blur-md border-b border-pink-500/10">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <nav className="sticky top-0  z-40 w-full py-3 sm:py-4 px-4 sm:px-6 bg-black/80 backdrop-blur-md border-b border-pink-500/10">
+      <div className=" max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo/Brand */}
         <div className="text-xl sm:text-2xl font-bold text-pink-500 md:hidden">
           CODEZEN
@@ -41,7 +41,7 @@ const Navigation = () => {
         <div className="hidden md:flex">
           <Button 
             variant="outline" 
-            className="bg-white text-black border-white hover:bg-gray-100 font-medium px-4 lg:px-6 text-sm lg:text-base hover:scale-105 transform transition-all"
+            className="bg-white text-black border-white hover:bg-gray-800 font-medium px-4 lg:px-6 text-sm lg:text-base hover:scale-105 transform transition-all"
           >
             📁 Go to projects
           </Button>
